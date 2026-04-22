@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+*.test.ts
+*.test.tsx
+*.spec.ts
+__tests__
+e2e
+playwright.config.ts
+jest.config.js
+jest.setup.js
+.github
+TESTING.md
+coverage
+.env.local
