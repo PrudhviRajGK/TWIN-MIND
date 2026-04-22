@@ -1,6 +1,6 @@
 "use client";
 
-import { RefreshCw, Lightbulb, MessageCircle, CheckCircle, AlertCircle, HelpCircle } from "lucide-react";
+import { RefreshCw, Lightbulb, MessageCircle, CheckCircle, AlertCircle, HelpCircle, FileText, ArrowRight } from "lucide-react";
 import { useSuggestions } from "@/hooks/useSuggestions";
 import { useAppContext } from "@/components/AppProvider";
 import { SuggestionType } from "@/types";
@@ -17,12 +17,19 @@ const suggestionIcons: Record<SuggestionType, React.ReactNode> = {
   answer: <CheckCircle size={16} className="text-green-400" />,
   fact_check: <AlertCircle size={16} className="text-orange-400" />,
   clarification: <HelpCircle size={16} className="text-purple-400" />,
+  summary: <FileText size={16} className="text-cyan-400" />,
+  next_step: <ArrowRight size={16} className="text-pink-400" />,
 };
 
 const suggestionLabels: Record<SuggestionType, string> = {
   question: 'Question',
   talking_point: 'Talking Point',
   answer: 'Answer',
+  fact_check: 'Fact Check',
+  clarification: 'Clarification',
+  summary: 'Summary',
+  next_step: 'Next Step',
+};
   fact_check: 'Fact Check',
   clarification: 'Clarification',
 };

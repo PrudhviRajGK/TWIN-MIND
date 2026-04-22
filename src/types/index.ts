@@ -23,7 +23,9 @@ export type SuggestionType =
   | 'talking_point' 
   | 'answer' 
   | 'fact_check' 
-  | 'clarification';
+  | 'clarification'
+  | 'summary'
+  | 'next_step';
 
 export interface Suggestion {
   id: string;
